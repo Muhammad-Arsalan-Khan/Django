@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Web Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/home/style.css' %}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">WebCompany</div>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Build Your Digital Future</h1>
+            <p>We create modern, responsive and powerful websites for your business growth.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-boxes">
+            <div class="box">
+                <h3>Website Design</h3>
+                <p>Creative and modern UI/UX design for your brand identity.</p>
+            </div>
+            <div class="box">
+                <h3>Web Development</h3>
+                <p>High-performance websites using latest technologies.</p>
+            </div>
+            <div class="box">
+                <h3>SEO & Marketing</h3>
+                <p>Rank higher on Google and grow your online presence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 WebCompany | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
